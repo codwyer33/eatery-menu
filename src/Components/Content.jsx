@@ -1,5 +1,7 @@
 import React from 'react';
+
 import ScheduleForm from './ScheduleForm';
+
 
 function Content(){
     return(
@@ -13,9 +15,11 @@ function Content(){
             <hr></hr>
             <br></br>
         </div>
+
         <div id="schedule-block">
             <ScheduleForm />
         </div>
+
         <div id="main-block">
             <div id="block-top">
                 <hr></hr>
@@ -25,6 +29,7 @@ function Content(){
            </div>
             <div id="block-a-right" class="menu-part">
                 <h2>Appetizers</h2>
+
                 <h6>item</h6>
                 <p>description</p>    
                 <br/>
@@ -109,6 +114,15 @@ function Content(){
              <br></br><br></br>
 
         </div>
+
+                <p>alsjfalksdjflkasdjfklasdjfkljdsakljfd</p>
+            </div>
+            <div id="block-a-left">
+            <h2></h2>  
+            </div> 
+        </div>
+
+
     </div>
     );
 }

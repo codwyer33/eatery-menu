@@ -10,8 +10,6 @@ function App(){
   return(  
     <div id="main">
     <Header />
-
-
     <Content />
     <Footer />
     </div>
