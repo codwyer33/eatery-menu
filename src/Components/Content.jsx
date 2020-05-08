@@ -1,6 +1,11 @@
 import React from 'react';
-
+import MenuSec from './MenuSec';
 import ScheduleForm from './ScheduleForm';
+const appetizers=[{}];
+const sides=[{}];
+const entrees=[{}];
+const drinks=[{}];
+const desserts=[{}];
 
 
 function Content(){
@@ -27,102 +32,13 @@ function Content(){
                 <hr></hr>
 
            </div>
-            <div id="block-a-right" class="menu-part">
-                <h2>Appetizers</h2>
-
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                 <h6>item</h6>
-                 <p>description</p>    
-
-            </div>
-            <div id="block-a-left" class="menu-part">
-                <h2></h2>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                 <h6>item</h6>
-                 <p>description</p>    
-             </div><br></br><hr></hr>
-             <div id="block-s-right" class="menu-part">
-                 <h2>Sides</h2>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                 <h6>item</h6>
-                 <p>description</p>   
-            </div>
-            <div id="block-s-left" class="menu-part">
-             <h2></h2>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                 <h6>item</h6>
-                 <p>description</p>   
-             </div><br></br><hr></hr>
-             <div id="block-e-right" class="menu-part">
-                 <h2>Entrees</h2>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                 <h6>item</h6>
-                 <p>description</p>   
-            </div>
-            <div id="block-e-left" class="menu-part">
-                <h2></h2>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                 <h6>item</h6>
-                 <p>description</p>   
-             </div><br></br><hr></hr>
-             <div id="block-d-right" class="menu-part">
-                <h2>Desserts</h2>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                 <h6>item</h6>
-                 <p>description</p>   
-            </div>
-            <div id="block-d-left" class="menu-part">
-                 <h2></h2>
-                <h6>item</h6>
-                <p>description</p>    
-                <br/>
-                 <h6>item</h6>
-                 <p>description</p>   
-             </div><br></br><hr></hr>
-             <br></br><br></br>
+            <MenuSec title="Appetizers" options={appetizers}/>
+            <MenuSec title="Sides" options={sides}/>
+            <MenuSec title="Entrees" options={entrees}/>
+            <MenuSec title="Desserts" options={desserts}/>
+            <MenuSec title="Drinks" options={drinks}/>
 
         </div>
-
-                <p>alsjfalksdjflkasdjfklasdjfkljdsakljfd</p>
-            </div>
-            <div id="block-a-left">
-            <h2></h2>  
-            </div> 
-        </div>
-
-
     </div>
     );
 }
