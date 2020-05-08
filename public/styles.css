@@ -2,20 +2,24 @@
 body{
     margin:0;
     font-family:'Slabo 27px', serif;
-    background-color:#eeeeee;
+    background-color:#dce7f3;
 }
 p{
     font-family: 'Roboto', sans-serif;
 }
-/* hr{
-    border:1px solid #030333;
-} */
+hr{
+    border-top:1px solid lightgray;
+}
+
+h2{
+    color:gray;
+}
 
 /* Header */
 #header{
     min-height:100px;
     background-color: #030333;
-    color:white;
+    color:rgb(226, 226, 226);
 }
 #header h1{
     margin:0;
@@ -27,6 +31,11 @@ p{
 /* Intro */
 #intro h1{
     font-family: 'Dancing Script', cursive;
+    font-size:40px;
+}
+#intro h2{
+    font-size:17px;
+    font-family:'Roboto';
 }
 
 #intro{
@@ -39,22 +48,80 @@ p{
     margin-top:30px;
     text-align:center;
 }
+/* Schedule block */
+#schedule-block{
+    width:71%;
+    background-color:white;
+    border-radius:5px;
+    box-shadow:5px 5px 10px gray;
+    color:#030333;
+    margin:auto;
+    margin-top:30px;
+    text-align:center;
+    padding:20px;
+}
+input{
+    border-radius:4px;
+    padding:3px;
+    padding-right:1px;
+}
+#schedule-block button{
+    padding:10px;
+    border-radius:3px;
+    background-color: white;
+    border:1px solid #030333;
+    color: #030333;
+    transition:color .2s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+#schedule-block button:hover{
+
+    background-color:#030333;
+    border:1px solid white;
+    color: white;
+
+}
 
 /* Menu */
 #main-block{
-    max-width:1000px;
+    width:67%;
     min-height:800px;
     border-radius:5px;
     background-color:white;
     box-shadow:5px 5px 10px gray;
     margin:auto;
     margin-top:30px;
-    padding:20px;
+    padding:50px;
+}
+#main-block h1{
+    /* margin-left:40px; */
+    text-align: center;
+}
+#main-block h2{
+    color: #030333;
 }
 
-#block-a-right,#block-a-left{
+#main-block .menu-part{
     width:49%;
     display:inline-block;
 }
+#main-block h6{
+    font-size:20px;
+    line-height:.5;
+    margin:0;
+    padding-left:15px;
+
+}
+#main-block p{
+    font-size:18px;
+    line-height:.5;
+    color:gray;
+    padding-left:15px;
+
+}
+
 
 /* Footer */
