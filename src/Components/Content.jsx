@@ -1,5 +1,8 @@
+
 import React from 'react';
 import MenuSec from './MenuSec';
+import React, { useState } from 'react';
+
 import ScheduleForm from './ScheduleForm';
 const appetizers=[{}];
 const sides=[{}];
@@ -9,6 +12,8 @@ const desserts=[{}];
 
 
 function Content(){
+    const [numDishes, setNumDishes] = useState({app: 2, sides: 2, entree: 1, dess: 2, drinks: 1});
+
     return(
     <div id="content">
 
@@ -32,6 +37,7 @@ function Content(){
                 <hr></hr>
 
            </div>
+
             <MenuSec title="Appetizers" options={appetizers}/>
             <MenuSec title="Sides" options={sides}/>
             <MenuSec title="Entrees" options={entrees}/>
@@ -39,6 +45,7 @@ function Content(){
             <MenuSec title="Drinks" options={drinks}/>
 
         </div>
+           
     </div>
     );
 }
