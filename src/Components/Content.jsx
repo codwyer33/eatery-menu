@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import ScheduleForm from './ScheduleForm';
 
 
 function Content(){
+    const [numDishes, setNumDishes] = useState({app: 2, sides: 2, entree: 1, dess: 2, drinks: 1});
+
     return(
     <div id="content">
 
@@ -29,6 +31,7 @@ function Content(){
            </div>
             <div id="block-a-right" class="menu-part">
                 <h2>Appetizers</h2>
+                <p>Select 1 More in this Category.</p>
 
                 <h6>item</h6>
                 <p>description</p>    
@@ -113,14 +116,12 @@ function Content(){
              </div><br></br><hr></hr>
              <br></br><br></br>
 
+        <label>Please leave any additional comments or dietary restrictions below!</label><br></br>
+        <textArea type="text" placeholder="Any additional comments" ></textArea>
+        <button>Submit Choices</button>
+
         </div>
 
-                <p>alsjfalksdjflkasdjfklasdjfkljdsakljfd</p>
-            </div>
-            <div id="block-a-left">
-            <h2></h2>  
-            </div> 
-        </div>
 
 
     </div>
