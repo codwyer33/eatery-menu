@@ -1,4 +1,5 @@
 import React from 'react';
+import ScheduleForm from "./ScheduleForm";
 
 function Content(){
     return(
@@ -13,6 +14,8 @@ function Content(){
             <br></br>
         </div>
 
+        <ScheduleForm/>
+
         <div id="main-block">
             <div id="block-top">
                 <hr></hr>
@@ -25,32 +28,9 @@ function Content(){
                 <p>alsjfalksdjflkasdjfklasdjfkljdsakljfd</p>
             </div>
             <div id="block-a-left">
-            <h2></h2>
-
-        <div id="left-arrow">
-
+            <h2></h2>  
+            </div> 
         </div>
-        <div id="main-block">
-            <div id="block-top">
-                <h1>Datesdlfjlsdjf</h1>
-            </div>
-            <div id="block-mid-right">
-                <h2>ladjsf</h2>
-                <p>alsjfalksdjflkasdjfklasdjfkljdsakljfd</p>
-            </div>
-            <div id="block-mid-left">
-            <h2>ladjsf</h2>
-
-                <p>alsjfalksdjflkasdjfklasdjfkljdsakljfd</p>
-            </div>
-
-        </div>
-
-        
-
-        <div id="right-arrow">
-
-        </div>      
 
     </div>
     );

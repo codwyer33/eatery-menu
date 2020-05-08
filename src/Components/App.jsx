@@ -12,8 +12,6 @@ function App(){
     <div id="main">
     <Header />
 
-    <ScheduleForm/>
-
     <Content />
     <Footer />
     </div>
