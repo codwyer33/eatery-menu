@@ -4,7 +4,6 @@ import Content from './Content';
 import Footer from './Footer';
 
 
-import ScheduleForm from './ScheduleForm';
 
 
 function App(){
@@ -12,7 +11,6 @@ function App(){
     <div id="main">
     <Header />
 
-    <ScheduleForm/>
 
     <Content />
     <Footer />
