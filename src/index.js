@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 
 ReactDOM.render(
-  <h1>hi</h1>,
+  <h1>this is clare</h1>,
   document.getElementById('root')
 );
 
