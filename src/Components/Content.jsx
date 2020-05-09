@@ -11,7 +11,7 @@ const appetizers=[
     {name:"Charcuterie Board", des:"Crackers and bread served with assorted cheese, meat, and jam"},
     {name:"Guacamole Devilled Eggs", des:"Hard boiled eggs topped with avocado and diced tomato filling"},
     {name:"Homemade Empanadas", des:"Golden brown and stuffed with beef and onion filling "},
-    {name:"Butternut Squash Soup", des:"Creamy"}
+    {name:"Butternut Squash Soup", des:"Creamy, golden orange butternut squash delight"}
     // {name:"Name of App5", des:"Very, very delicious"}
 
 ];
@@ -26,10 +26,10 @@ const entrees=[
     {name:"Meatball Plate ", des:"Bite-sized and served with marinara and teriyaki dipping sauces"},
     {name:"Potato Bun Sliders", des:"Grilled patties on potato buns with homemade ketchup"},
     {name:"Garlic Parmesan Chicken", des:"Topped with lemon and chives"},
-    {name:"Eggplant Lasagna", des:"des"}
+    {name:"Eggplant Lasagna", des:"A creative Whole30 invention!"}
 ];
 const drinks=[
-    {name:"Sparkling Water with Lemon", des:"des"},
+    {name:"Sparkling Water with Lemon", des:"Enough said."},
     {name:"Wine", des:"White or red"},
     {name:"Chai Tea", des:"Served hot, may be served with dessert"},
     {name:"Summer Spritzer Cocktail", des:"Choice of pineapple or strawberry, iced"}
