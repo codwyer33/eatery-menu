@@ -16,9 +16,9 @@ const appetizers=[
 ];
 const sides=[
     {name:"Spiced Sweet Potato Fries", des:"Served fresh from the air fryer with homemade ketchup"},
-    {name:"Scallion Pancakes", des:" "},
-    {name:"Charcuterie Board", des:"Served fresh from the air fryer with homemade ketchup"},
-    {name:"Eggplant Pizzas", des:"Served fresh from the air fryer with homemade ketchup"}
+    {name:"", des:" "},
+    {name:"", des:"Served fresh from the air fryer with homemade ketchup"},
+    {name:"", des:"Served fresh from the air fryer with homemade ketchup"}
 
 ];
 const entrees=[
@@ -85,10 +85,15 @@ function Content(){
             <MenuSec title="Desserts" options={desserts}/>
             <MenuSec title="Drinks" options={drinks}/>
 
-            <label>Please leave any additional comments or dietary restrictions below:</label><br></br>
-            <textArea  type="text" placeholder="Any Additional Comments" ></textArea>
-            <button onClick={sendEmail} type="submit">Submit my order!</button>
-
+            <div id="submit-section">
+                <br/>
+                <div id="submit-left-align">
+                    <label><h2>Please leave any additional comments or dietary restrictions below:</h2></label>
+                    <textarea  type="text" placeholder="Any additional comments" rows="10" cols="110"></textarea><br/>
+                </div>
+                <button id="submit-btn" onClick={sendEmail} type="submit">Submit my order!</button>
+                <br/><br/>
+            </div>
         </div>
            
     </div>
