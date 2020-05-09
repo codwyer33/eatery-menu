@@ -1,7 +1,9 @@
 
 import React from 'react';
 import MenuSec from './MenuSec';
-import React, { useState } from 'react';
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+
 
 import ScheduleForm from './ScheduleForm';
 const appetizers=[{}];
@@ -13,6 +15,17 @@ const desserts=[{}];
 
 function Content(){
     const [numDishes, setNumDishes] = useState({app: 2, sides: 2, entree: 1, dess: 2, drinks: 1});
+    const [order, setOrder] = useState({appetizers: ["test app"], sides: ["test side"], entrees: [], drinks: [], desserts: []});
+
+    function sendEmail(e) {
+        console.log("send email");
+        emailjs.sendForm('gmail', 'template_4XwuT01L', order, 'YOUR_USER_IDuser_NNbEaAW2hSuNXXPbx16QM')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    }
 
     return(
     <div id="content">
@@ -43,6 +56,10 @@ function Content(){
             <MenuSec title="Entrees" options={entrees}/>
             <MenuSec title="Desserts" options={desserts}/>
             <MenuSec title="Drinks" options={drinks}/>
+
+            <label>Please leave any additional comments or dietary restrictions below:</label><br></br>
+            <textArea  type="text" placeholder="Any Additional Comments" ></textArea>
+            <button onClick={sendEmail} type="submit">Submit my order!</button>
 
         </div>
            
