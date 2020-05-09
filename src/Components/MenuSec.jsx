@@ -1,9 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function MenuSec(props){
     const options = props.options;
     var col1 = [];
     var col2 = [];
+    const [num, setNum] = useState((props.title === 'Appetizers' || props.title === 'Sides' || props.title === 'Desserts') ? {maxNum: 2, count: 0} : {maxNum: 1, count: 0});
+
+    function changeNum(event) {
+        if (event.target.checked) {
+            //checking
+            if (num.count < num.maxNum) {
+                setNum(prevValue => {return {...prevValue, count: num.count + 1}});
+            } else {
+                //cannot pick any more
+                event.target.checked = false;
+            }
+        } else {
+            //unchecking 
+            
+            setNum(prevValue => {return {...prevValue, count: num.count - 1}});
+        }
+    }
 
     // Divides options into two columns
     options.map((option,index)=>{
@@ -19,7 +36,7 @@ function MenuSec(props){
         return(
         <div>
             <div id="option-checkbox-div">
-            <input type="checkbox"></input> 
+            <input onClick={changeNum} id="check" type="checkbox"></input> 
             </div>
             <div id="option-text-div">
             <h6>{option.name}</h6>
@@ -34,6 +51,7 @@ function MenuSec(props){
         <div id="menu">
              <div id="block-a-right" class="menu-part">
                 <h2>{props.title}</h2>
+                <h3>Please select {num.maxNum - num.count} more in this category.</h3>
                 {col1.map(makeOption)}
 
             </div>
