@@ -1,24 +1,27 @@
 import React, {useState} from 'react';
 
 function MenuSec(props){
+    // console.log(props);
     const options = props.options;
     var col1 = [];
     var col2 = [];
-    const [num, setNum] = useState((props.title === 'Appetizers' || props.title === 'Sides' || props.title === 'Desserts') ? {maxNum: 2, count: 0} : {maxNum: 1, count: 0});
+    const [num, setNum] = useState((props.title === 'Appetizers' || props.title === 'Sides' || props.title === 'Desserts' || props.title === 'Drinks') ? {maxNum: 2, count: 0} : {maxNum: 1, count: 0});
 
     function changeNum(event) {
         if (event.target.checked) {
             //checking
             if (num.count < num.maxNum) {
                 setNum(prevValue => {return {...prevValue, count: num.count + 1}});
+                props.addItem(props.title, event.target.name);
+
             } else {
                 //cannot pick any more
                 event.target.checked = false;
             }
         } else {
             //unchecking 
-            
             setNum(prevValue => {return {...prevValue, count: num.count - 1}});
+            props.deleteItem(props.title, event.target.name);
         }
     }
 
@@ -36,7 +39,7 @@ function MenuSec(props){
         return(
         <div>
             <div id="option-checkbox-div">
-            <input onClick={changeNum} id="check" type="checkbox"></input> 
+            <input onClick={changeNum} id="check" type="checkbox" name={option.name}></input> 
             </div>
             <div id="option-text-div">
             <h6>{option.name}</h6>
