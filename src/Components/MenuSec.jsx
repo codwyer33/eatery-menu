@@ -54,12 +54,13 @@ function MenuSec(props){
         <div id="menu">
              <div id="block-a-right" class="menu-part">
                 <h2>{props.title}</h2>
-                <h3>Please select {num.maxNum - num.count} more in this category.</h3>
+                <h3>Please select <strong> {num.maxNum - num.count} </strong> more in this category.</h3>
                 {col1.map(makeOption)}
 
             </div>
             <div id="block-a-left" class="menu-part">
-                <h2 id="spacer"> _ </h2>
+                <h2 className="spacer"> _</h2>
+                <h3 className="spacer"> _</h3>
                 {col2.map(makeOption)}
              </div><br></br><hr></hr>
         </div>

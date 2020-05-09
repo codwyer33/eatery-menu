@@ -7,37 +7,38 @@ import emailjs from 'emailjs-com';
 
 import ScheduleForm from './ScheduleForm';
 const appetizers=[
-    {name:"Scallion Pancakes", des:"Very, very delicious"},
-    {name:"Charcuterie Board", des:"Very, very delicious"},
-    {name:"Eggplant Pizzas", des:"Very, very delicious"},
-    {name:"Homemade Empanadas", des:"Very, very delicious"},
+    {name:"Scallion Pancakes", des:"Crispy and layered with garlic and onion"},
+    {name:"Charcuterie Board", des:"Crackers and bread served with assorted cheese, meat, and jam"},
+    {name:"Guacamole Devilled Eggs", des:"Hard boiled eggs topped with avocado and diced tomato filling"},
+    {name:"Homemade Empanadas", des:"Golden brown and stuffed with beef and onion filling "},
+    {name:"Butternut Squash Soup", des:"Creamy"}
     // {name:"Name of App5", des:"Very, very delicious"}
 
 ];
 const sides=[
     {name:"Spiced Sweet Potato Fries", des:"Served fresh from the air fryer with homemade ketchup"},
-    {name:"", des:" "},
-    {name:"", des:"Served fresh from the air fryer with homemade ketchup"},
-    {name:"", des:"Served fresh from the air fryer with homemade ketchup"}
+    {name:"Eggplant Pizzas", des:"Miniature sized pizzas topped with sauce, cheese, and beef"},
+    {name:"Baked Potato", des:"Served hot and topped with salsa, corn, and homemade guacamole."},
+    {name:"Grilled Kabobs", des:"Pineapple, eggplant, pepper, and sausage"}
 
 ];
 const entrees=[
-    {name:"dish", des:"des"},
-    {name:"Potato Bun Sliders", des:"des"},
-    {name:"dish", des:"des"},
-    {name:"dish", des:"des"}
+    {name:"Meatball Plate ", des:"Bite-sized and served with marinara and teriyaki dipping sauces"},
+    {name:"Potato Bun Sliders", des:"Grilled patties on potato buns with homemade ketchup"},
+    {name:"Garlic Parmesan Chicken", des:"Topped with lemon and chives"},
+    {name:"Eggplant Lasagna", des:"des"}
 ];
 const drinks=[
-    {name:"dish", des:"des"},
-    {name:"dish", des:"des"},
-    {name:"dish", des:"des"},
-    {name:"dish", des:"des"}
+    {name:"Sparkling Water with Lemon", des:"des"},
+    {name:"Wine", des:"White or red"},
+    {name:"Chai Tea", des:"Served hot, may be served with dessert"},
+    {name:"Summer Spritzer Cocktail", des:"Choice of pineapple or strawberry, iced"}
 ];
 const desserts=[
-    {name:"Chocolate Dipped Strawberries", des:"des"},
-    {name:"dish", des:"des"},
-    {name:"dish", des:"des"},
-    {name:"dish", des:"des"}
+    {name:"Chocolate Dipped Strawberries", des:"Topped with sprinkled chocolate and cookie crumbs"},
+    {name:"Olivia's Chocolate Peanut Butter Bar Special", des:"Chooey, gooey goodness    (© Olivia 2020)"},
+    {name:"Banana Split", des:"Topped with yogurt, sprinkled chocolate, toasted almonds, and fresh strawberries."},
+    {name:"Four Ingredient Crepes", des:"Choice of toppings: blueberries, peanut butter, chocolate chips, strawberries, banana"}
 ];
 
 
