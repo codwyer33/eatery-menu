@@ -70,7 +70,7 @@ h2{
     margin-right:15px;
     /* width:200px; */
 }
-#schedule-block button, #schedule-block .btn{
+button, #schedule-block .btn{
     padding:10px;
     border-radius:3px;
     background-color: white;
@@ -83,7 +83,7 @@ h2{
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
-#schedule-block button:hover, #schedule-block .btn:hover{
+button:hover, #schedule-block .btn:hover{
 
     background-color:#030333;
     border:1px solid white;
@@ -160,4 +160,21 @@ right:8px;
     /* display: inline; */
 }
 
-/* Footer */
+/* Comment/Submit section */
+textarea{
+    border-radius:4px;
+    font-size:16px;
+    border:1px solid gray;
+}
+#submit-section{
+    text-align: center;
+}
+#submit-btn{
+    text-align: center;
+    margin:auto;
+    margin-top:30px;
+}
+#submit-left-align{
+    text-align:left;
+}
+
