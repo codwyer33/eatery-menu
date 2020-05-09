@@ -15,6 +15,7 @@ h2{
     color:gray;
 }
 
+
 /* Header */
 #header{
     min-height:100px;
@@ -50,7 +51,7 @@ h2{
 }
 /* Schedule block */
 #schedule-block{
-    width:71%;
+    width:67%;
     background-color:white;
     border-radius:5px;
     box-shadow:5px 5px 10px gray;
@@ -58,31 +59,51 @@ h2{
     margin:auto;
     margin-top:30px;
     text-align:center;
-    padding:20px;
+    padding:50px;
+    padding-top:30px;
 }
-input{
+#schedule-block input{
     border-radius:4px;
     padding:3px;
     padding-right:1px;
+    font-size: 16px;
+    margin-right:15px;
+    /* width:200px; */
 }
-#schedule-block button{
+#schedule-block button, #schedule-block .btn{
     padding:10px;
     border-radius:3px;
     background-color: white;
     border:1px solid #030333;
     color: #030333;
     transition:color .2s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-
+    font-size:11px;
 }
+
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
-#schedule-block button:hover{
+#schedule-block button:hover, #schedule-block .btn:hover{
 
     background-color:#030333;
     border:1px solid white;
     color: white;
 
+}
+#schedule-form h2{
+    color:#030333;
+}
+h3{
+    color:gray;
+}
+#schedule-form{
+    text-align:left;
+}
+#schedule-form input{
+    display: inline;
+}
+label{
+    padding-right:23px;
 }
 
 /* Menu */
@@ -107,6 +128,8 @@ input{
 #main-block .menu-part{
     width:49%;
     display:inline-block;
+    margin:auto;
+    vertical-align: top;
 }
 #main-block h6{
     font-size:20px;
@@ -117,11 +140,24 @@ input{
 }
 #main-block p{
     font-size:18px;
-    line-height:.5;
+    line-height:1;
     color:gray;
     padding-left:15px;
-
+    
 }
-
+#menu #spacer{
+    color:white;
+}
+#option-checkbox-div{
+margin-right:10px;
+/* display:inline-block; */
+position:relative;
+top:12px;
+right:8px;
+}
+#option-text-div{
+    width:90%;
+    /* display: inline; */
+}
 
 /* Footer */
